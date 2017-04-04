@@ -1,10 +1,14 @@
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<!DOCTYPE html>
+<html>
 
 <head>
 
 <title>WebSocket: Say Hello</title> 
-<link rel="stylesheet" type="text/css" href="resources/css/hello.css" />
 
+
+<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+<script type="text/javascript" src="scripts/test.js"></script>
+ <script type="text/javascript" src="scripts/test2.js"></script>
 <script type="text/javascript">
             var websocket = null;
 
@@ -66,11 +70,12 @@
 
 </head>
 
-<body>
+<body ng-app="mattSimpleDirective">
    
   <div>
     
     <h1>Welcome to JBoss!</h1>
+    <my-hello></my-hello>
     
     <div>This is a simple example of a WebSocket implementation.</div>
     
@@ -116,6 +121,6 @@
     </div>
     
   </div>
-  
+ 
 </body>
 </html>
